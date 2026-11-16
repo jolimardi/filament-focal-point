@@ -1,0 +1,58 @@
+{
+    "name": "jolimardi/filament-focal-point",
+    "description": "Point focal pour les images de la media library Spatie dans Filament : choisi en popup sur l'upload, appliqué aux conversions recadrées et au CSS du front",
+    "keywords": [
+        "laravel",
+        "filament",
+        "spatie",
+        "media-library",
+        "focal-point",
+        "crop",
+        "image"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joli Mardi",
+            "email": "contact@joli-mardi.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^5.0",
+        "filament/spatie-laravel-media-library-plugin": "^5.0",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "spatie/image": "^3.8.5",
+        "spatie/laravel-medialibrary": "^11.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JoliMardi\\FilamentFocalPoint\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JoliMardi\\FilamentFocalPoint\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JoliMardi\\FilamentFocalPoint\\FilamentFocalPointServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
